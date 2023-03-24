@@ -1,0 +1,87 @@
+.cabec {
+    position: relative;
+    width: 1440px;
+    height: 80px;
+    left: 0px;
+    top: 0px;
+
+}
+
+.fraseP {
+    position: absolute;
+    width: 400px;
+    height: 128px;
+    left: 160px;
+    top: 256px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 64px;
+    /* or 100% */
+
+
+    color: #FFD302;
+}
+
+.fraseT {
+    position: absolute;
+    width: 455px;
+    height: 114px;
+    left: 160px;
+    top: 420px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+
+    color: #ffffff;
+}
+
+.fraseB {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 27px;
+    gap: 10px;
+
+    position: absolute;
+    width: 265px;
+    height: 51px;
+    left: 160px;
+    top: 565px;
+
+    background: #FFD302;
+    border-radius: 62px;
+}
+
+.fraseBT {
+    width: 211px;
+    height: 19px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+
+    color: #090909;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.imgP {
+    width: 100vw;
+    height: 100vh;
+}

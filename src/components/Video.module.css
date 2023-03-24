@@ -1,0 +1,19 @@
+.container {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    left: 0px;
+    top: 766px;
+   
+    background: #090909;
+}
+
+.imgV {
+    position: absolute;
+    top: 45%;
+    left: 44%;
+    width: 730px;
+    height: 500px;
+    margin-top: -200px;
+    margin-left: -250px;
+}

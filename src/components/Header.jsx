@@ -1,10 +1,13 @@
 import banner from '../images/Banner_Principal.png'
+import logo from '../images/Logo.png'
 import styles from './Header.module.css'
 import { BsInstagram, BsFacebook, BsYoutube} from "react-icons/bs"
 
 function Header() {
     return (
         <main>
+            <img src={logo} className={styles.logo}></img>
+            <a className={styles.log}>Login</a>
             <p className={styles.fraseP}>Amor em movimento!</p>
             <p className={styles.fraseT}>
             Intuito é possibilitar a dança, 

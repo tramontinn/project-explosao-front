@@ -7,6 +7,31 @@
 
 }
 
+.logo{
+    position: absolute;
+    max-width: 300px;
+    margin-left: 155px;
+    margin-top: 20px;
+}
+
+.log {
+    display: flex;
+    position: absolute;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFD302;
+
+    padding: 35px 0px 0px 1800px;
+}
+
+.log:hover {
+    cursor: pointer;
+    text-decoration: underline #FFD302;
+}
+
 .fraseP {
     position: absolute;
     width: 400px;
@@ -79,6 +104,10 @@
     flex: none;
     order: 0;
     flex-grow: 0;
+}
+
+.fraseBT:hover {
+    cursor: pointer;
 }
 
 .imgP {

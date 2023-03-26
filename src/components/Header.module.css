@@ -1,6 +1,6 @@
 .cabec {
-    position: relative;
-    width: 1440px;
+    position: absolute;
+    width: 1903px;
     height: 80px;
     left: 0px;
     top: 0px;
@@ -8,27 +8,42 @@
 
 .logo{
     position: absolute;
-    max-width: 300px;
-    margin-left: 155px;
-    margin-top: 20px;
+    max-width: 317px;
+    max-height: 92px;
+    padding: 30px 1060px 705px 165px;
 }
 
-.log {
+.socials {
     display: flex;
+    gap: 31px;
     position: absolute;
+    right: 0;
+    padding-right: 100px;
+    padding-top: 50px;
+    color: #FFFFFF;
+    font-size: 25px;
+    flex-direction: row-reverse;
+}
+
+.socials > a {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
-    color: #FFD302;
+    
+    color: #FFD302;  
+    display: flex;
 
-    padding: 35px 0px 0px 1800px;
 }
 
-.log:hover {
+.socials > a:hover{
     cursor: pointer;
     text-decoration: underline #FFD302;
+}
+
+.socials:hover {
+    cursor: pointer;
 }
 
 .fraseP {

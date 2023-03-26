@@ -1,0 +1,78 @@
+.container {
+    position: absolute;
+    width: 1672px;
+    height: 570px;
+    left: 0px;
+    top: 5323px;
+    background: #1F272A;
+    padding-left: 248px;
+}
+
+.logo {
+    position: absolute;
+    max-width: 352px;
+    max-height: 73px;
+    padding: 44px 927px 447px 160px;
+}
+
+.mail {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: right;
+
+    color: #FFD302;
+}
+
+.number {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: right;
+    color: #FFFFFF;
+}
+
+.contacts {
+    position: absolute;
+    padding: 70px 160px 452px 1064px;
+}
+
+.creators {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19.36px;
+    text-align: right;
+    color: #FFFFFF;
+    position: absolute;
+    padding: 403px 160px 123px 892px;
+    max-width: 448;
+    max-height: 38px;
+}
+
+.desenv {
+    position: absolute;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    padding: 403px 864px 123px 160px;
+    max-width: 416px;
+    max-height: 38px;
+}
+
+.social {
+    display: flex;
+    gap: 20px;
+    color: #FFFFFF;
+    font-size: 25px;
+    position: absolute;
+    padding: 148px 281px 390px 1133px;
+}

@@ -4,6 +4,7 @@ import './index.css'
 import Header from './components/Header'
 import Video from './components/Video'
 import Aulas from './components/Aulas'
+import Professores from './components/Professores'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -12,5 +13,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Video/>
     
     <Aulas/>
+
+    <Professores />
   </React.StrictMode>
 )

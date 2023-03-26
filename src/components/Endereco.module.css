@@ -1,0 +1,46 @@
+.container {
+    position: absolute;
+    width: 100vw;
+    height: 880px;
+    left: 0px;
+    top: 4443px;
+    background: #090909;
+    display: flex;
+}
+
+.container > h1 {
+    position: absolute;
+    left: 45%;
+    right: 45%;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 64px;
+    text-align: center;
+    color: #FFD302;
+}
+
+.container > p {
+    position: absolute;
+    width: 420px;
+    height: 52px;
+    left: 39%;
+    /* right: -25%; */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    padding-top: 130px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.container > img {
+    position: absolute;
+    width: 1120px;
+    height: 524px;
+    left: 395px;
+    top: 280px;
+}

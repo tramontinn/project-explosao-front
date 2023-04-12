@@ -2,6 +2,7 @@ import banner from '../images/Banner_Principal.png'
 import logo from '../images/Logo.png'
 import styles from './Header.module.css'
 import { FaFacebookF, FaYoutube, FaInstagram } from 'react-icons/fa'
+import { Link } from 'react-router-dom'
 
 function Header() {
     return (
@@ -9,7 +10,7 @@ function Header() {
             <div className={styles.cabec}>
                 <img src={logo} className={styles.logo}></img>
                 <ul className={styles.socials}>
-                    <a href='#'>Login</a>
+                    <Link to="login">Login</Link>
                     <li><FaYoutube /></li>
                     <li><FaFacebookF /></li>
                     <li><FaInstagram /></li>

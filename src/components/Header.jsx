@@ -9,7 +9,7 @@ function Header() {
             <div className={styles.cabec}>
                 <img src={logo} className={styles.logo}></img>
                 <ul className={styles.socials}>
-                    <a>Login</a>
+                    <a href='#'>Login</a>
                     <li><FaYoutube /></li>
                     <li><FaFacebookF /></li>
                     <li><FaInstagram /></li>

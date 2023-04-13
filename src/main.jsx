@@ -1,25 +1,24 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
-import Header from './components/Header'
-import Video from './components/Video'
-import Aulas from './components/Aulas'
-import Professores from './components/Professores'
-import Endereco from './components/Endereco'
-import Footer from './components/Footer'
-import { BrowserRouter } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Home from './views/index'
+import Login from './views/login'
+import Dashboard from './views/admin/dashboard'
+import PrivateRoute from './privateRoute'
 
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>
-      <Header/>
-      <Video/>
-      <Aulas/>
-      <Professores />
-      <Endereco />
-      <Footer />
+      <Routes>
+        <Route index path="/" element={<Home />}/>
+        <Route path="/login" element={<Login />}/>
+        <Route path="/admin">
+          <Route path="dashboard" element={<PrivateRoute><Dashboard/></PrivateRoute>} />
+        </Route>
+      </Routes>
     </BrowserRouter>  
   </React.StrictMode>
 )

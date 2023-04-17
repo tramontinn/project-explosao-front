@@ -1,0 +1,35 @@
+.page {
+    display: block;
+}
+
+.img {
+    height: 969px;
+    position: absolute;
+    width: 100%;
+}
+
+.component {
+    position: relative;
+    display: flex;
+    color: white;
+    justify-content: center;
+    top: 330px;
+    font-size: 40px;
+}
+
+.form {
+    font-size: 25px;
+    position: relative;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    align-items: center;
+    top: 350px;
+    width: 300px;
+    margin-left: 796px;
+    padding: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    -webkit-background-clip: padding-box; /* for Safari */
+    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+    border-radius: 15px;
+}

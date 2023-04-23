@@ -1,23 +1,22 @@
 import React from 'react'
-import backgroud from '../images/Banner_Principal.png'
+import backgroud from '../images/banner_login.png'
+import logo from '../images/Logo.png'
 import styles from './Login.module.css'
 
 const Login = () => {
   return (
     <div className={styles.page}>
       <img src={backgroud} className={styles.img}></img>
-      <div className={styles.component}>Login</div>
-        <form className={styles.form}>
-          <div>
+      <img src={logo} className={styles.logo}></img>
+      <div className={styles.base}>
+        <form>
+          <div className={styles.form}> 
             <input type="text" placeholder="Usuário" />
-          </div>
-          <div>
-            <input type="password" placeholder="Digite sua senha" />
-          </div>
-          <div>
-            <input type="submit" value="Entrar" />
+            <input type="password" placeholder="Senha" />
+            <input className={styles.button} type="submit" value="Entrar" />
           </div>
         </form>
+      </div>
     </div>
   )
 }

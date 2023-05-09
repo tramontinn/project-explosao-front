@@ -46,3 +46,7 @@ input {
     background-color: yellow;
     color: #090909;
 }
+
+.button:hover{
+    cursor: pointer;
+}

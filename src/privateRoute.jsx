@@ -1,13 +1,18 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Navigate, useLocation } from 'react-router-dom'
 
 const PrivateRoute = ({children}) => {
-    let location = useLocation()
-    const autorizado = true 
+  let location = useLocation()
+  const [isAuthenticated, setIsAuthenticated] = useState(false)
 
-    if (!autorizado) {
-        return <Navigate to="/login" replace state={{from: location}}></Navigate>
-    }
+  useEffect(() => {
+    const token = localStorage.getItem('token');
+    setIsAuthenticated(token !== null)
+  }, [])
+
+  if (!isAuthenticated) {
+    return <Navigate to="/login" replace state={{from: location}}></Navigate>
+  }
   return children
 }
 

@@ -1,0 +1,61 @@
+.container {
+    position: relative;
+    width: 1440px;
+    height: 1132px;
+
+    background: #191A1B;
+}
+
+.frame1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 26px 40px;
+    gap: 693px;
+
+    position: absolute;
+    width: 1116px;
+    height: 111px;
+    left: 324px;
+    top: 0px;
+}
+
+.frame1 p {
+    position: absolute;
+    width: 133px;
+    height: 29px;
+    left: 112px;
+    top: 41.5px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+
+.rectangle5 {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 364px;
+    height: 208px;
+    left: -18px;
+    top: 139px;
+    
+    border-radius: 5px;
+}
+
+.logo {
+    position: absolute;
+    width: 240px;
+    height: 49.69px;
+    left: 38px;
+    top: 37px;
+    
+    background: #FFD302;
+}

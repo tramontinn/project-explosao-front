@@ -3,7 +3,7 @@ import { Navigate, useLocation } from 'react-router-dom'
 
 const PrivateRoute = ({children}) => {
   let location = useLocation()
-  const [isAuthenticated, setIsAuthenticated] = useState(false)
+  const [isAuthenticated, setIsAuthenticated] = useState(true)
 
   useEffect(() => {
     const token = localStorage.getItem('token');

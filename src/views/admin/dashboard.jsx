@@ -5,6 +5,14 @@ import logo from '../../images/Logo.png'
 const Dashboard = () => {
   return (
     <div className={styles.container}>
+      <div className={styles.primaryButton}>
+        <div className={styles.containerAlunos}>
+          <div>Alunos matriculados</div>
+          <p>323</p>
+        </div>
+          <button className={styles.adicionarTurma} ><p>Adicionar turma</p><img></img></button>
+          <button className={styles.adicionarAluno}><p>Adicionar aluno</p></button>
+      </div>
       <div className={styles.menu}>
         <img src={logo} className={styles.logo}></img>
         <button>Visão Geral</button>

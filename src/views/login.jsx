@@ -1,9 +1,9 @@
-import { useState, useContext } from 'react'
+import { useState, useContext, } from 'react'
 import React from 'react'
 import backgroud from '../images/banner_login.png'
 import logo from '../images/Logo.png'
 import styles from './Login.module.css'
-import { Navigate } from 'react-router-dom'
+import { Navigate, redirect, useNavigate } from 'react-router-dom'
 
 
 const Login = () => {
@@ -11,6 +11,8 @@ const Login = () => {
   //setamos o useState para pegar os dados e armazenar nas variáveis "set"
   const [username, setUsername] = useState("")
   const [password, setPassword] = useState("")
+
+  const navigate = useNavigate();
 
   //Faz com que o submit não recarregue a página e perca os dados
   const handleSubmit = async (e) => {
@@ -28,7 +30,8 @@ const Login = () => {
         console.log('login bem sucedido', data)
         const token = data.additionalInfo.jwtToken
         localStorage.setItem('token', token)
-        setUsername(data.username)
+        setUsername(data.additionalInfo.username)
+        navigate('/admin/dashboard')
       } else {
         console.log('login falhou', data)
       }

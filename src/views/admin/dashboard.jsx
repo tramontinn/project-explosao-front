@@ -5,6 +5,7 @@ import logo from '../../images/Logo.png'
 const Dashboard = () => {
   return (
     <div className={styles.container}>
+      <img src={logo} className={styles.logo}></img>
       <div className={styles.primaryButton}>
         <div className={styles.containerAlunos}>
           <div>Alunos matriculados</div>
@@ -14,13 +15,22 @@ const Dashboard = () => {
           <button className={styles.adicionarAluno}><p>Adicionar aluno</p></button>
       </div>
       <div className={styles.menu}>
-        <img src={logo} className={styles.logo}></img>
-        <button>Visão Geral</button>
-        <button>Alunos</button>
-        <button>Turmas</button>
+        <button name="visao-geral">Visão Geral</button>
+        <button name="alunos">Alunos</button>
+        <button name="turmas">Turmas</button>
       </div>
       <div className={styles.frame1}><p>Visão geral</p></div>
-      <div className={styles.rectangle5}></div>
+        <p className={styles.message}>Mensalidades atrasadas</p>
+      <div className={styles.alunos}>
+        <ul className={styles.barNames}>
+          <p name="nome">Nome</p>
+          <p name="idade">Idade</p>
+          <p name="turma">Turmas</p>
+          <p name="ultimo">Último pagamento</p>
+          <p name="situacao">Situação</p>
+          <li className={styles.listAlunos}></li>
+        </ul>
+      </div>
     </div>
   )
 }

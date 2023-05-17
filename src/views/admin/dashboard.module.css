@@ -6,6 +6,120 @@
     background: #191A1B;
 }
 
+.menu {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    width: 364px;
+    height: 208px;
+    left: 0px;
+    top: 139px;
+    
+    border-radius: 5px;
+}
+
+button[name='visao-geral'] {
+    position: absolute;
+
+    width: 324px;
+    height: 56px;
+    left: 18px;
+    top: 20px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+
+    color: #6B6B6B;
+    border: none!important;
+    background: none;
+}
+
+button[name='visao-geral']:hover {
+    cursor: pointer;
+}
+
+button[name='visao-geral']:active,
+button[name='visao-geral']:focus {
+    color: #FFD302;
+}
+
+button[name='alunos'] {
+    position: absolute;
+    right: 168px;
+    bottom: 20px;
+
+    width: 324px;
+    height: 56px;
+    left: 18px;
+    top: 86px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+
+    color: #6B6B6B;
+    border: none!important;
+    background: none;
+}
+
+button[name='alunos']:hover {
+    cursor: pointer;
+}
+
+button[name='alunos']:active,
+button[name='alunos']:focus {
+    color: #FFD302;
+}
+
+button[name='turmas'] {
+    width: 324px;
+    height: 56px;
+    top: 152px;
+
+    position: absolute;
+    left: 18px;
+    right: 168px;
+    bottom: 20px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+
+    color: #6B6B6B;
+    border: none!important;
+    background: none;
+}
+
+button[name='turmas']:hover {
+    cursor: pointer;
+}
+
+button[name='turmas']:active,
+button[name='turmas']:focus {
+    color: #FFD302;
+}
+
 .primaryButton {
     box-sizing: border-box;
 
@@ -106,6 +220,10 @@
     color: #6B6B6B;
 }
 
+.adicionarTurma:hover{
+    cursor: pointer;
+}
+
 .adicionarAluno {
     position: absolute;
     width: 332px;
@@ -114,6 +232,31 @@
     top: 17px;
 
     filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.3));
+
+    background: #FFD302;
+    border-radius: 10px;
+}
+
+.adicionarAluno p {
+    position: absolute;
+    left: 34px;
+    right: 218px;
+    top: 36px;
+    bottom: 36px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+
+    color: #090909;
+}
+
+.adicionarAluno:hover{
+    cursor: pointer;
 }
 
 .frame1 {
@@ -148,24 +291,191 @@
     color: #FFFFFF;
 }
 
-.rectangle5 {
-    box-sizing: border-box;
-
-    position: absolute;
-    width: 364px;
-    height: 208px;
-    left: -18px;
-    top: 139px;
-    
-    border-radius: 5px;
-}
-
 .logo {
     position: absolute;
     width: 240px;
     height: 49.69px;
     left: 38px;
     top: 37px;
+}
+
+.message {
+    position: absolute;
+    width: 247px;
+    height: 24px;
+    left: 398px;
+    top: 299px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+
+}
+
+.alunos {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 1076px;
+    height: 724px;
+    right: 20px;
+    top: 326px;
+
+    filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.3));
+    border-radius: 5px;
+}
+
+.barNames {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
     
-    background: #FFD302;
+    position: absolute;
+    max-width: 1036px;
+    height: 46px;
+    left: 20px;
+    top: 10px;
+    
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.barNames p {
+    box-sizing: border-box;
+    
+    background: #090909;
+    border-radius: 10px 0px 0px 0px;
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 130%;
+    /* identical to box height, or 16px */
+
+
+    color: #6B6B6B;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+p[name='nome'] {
+    box-sizing: border-box;
+
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px 12px;
+
+    width: 407px;
+    height: 46px;
+
+    background: #090909;
+    border-radius: 10px 0px 0px 0px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+p[name='idade'] {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 12px;
+
+    width: 72px;
+    height: 46px;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+p[name='turma'] {
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 12px;
+    
+    width: 76px;
+    height: 46px;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+p[name='ultimo'] {
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 12px;
+
+    width: 159px;
+    height: 46px;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+p[name='situacao'] {
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 12px;
+
+    width: 167px;
+    height: 46px;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
 }

@@ -16,6 +16,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path="/login" element={<Login />}/>
           <Route path="/admin">
             <Route path="dashboard" element={<PrivateRoute><Dashboard/></PrivateRoute>} />
+            <Route dashboard="adicionar-aluno" element={<adicionarAluno />}/>
           </Route>
         </Routes>
     </BrowserRouter>  

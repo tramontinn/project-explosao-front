@@ -3,7 +3,7 @@ import React from 'react'
 import backgroud from '../images/banner_login.png'
 import logo from '../images/Logo.png'
 import styles from './Login.module.css'
-import { Navigate, redirect, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 
 const Login = () => {

@@ -1,8 +1,13 @@
 import React from 'react'
+import styles from './adicionarAluno.module.css'
+
 
 const adicionarAluno = () => {
   return (
-    <div>adicionarAluno</div>
+    <div className={styles.container}>
+      <p className={styles.phrase}>Adicionar Aluno</p>
+    
+    </div>
   )
 }
 

@@ -1,8 +1,10 @@
 import React from 'react'
 import styles from './dashboard.module.css'
 import logo from '../../images/Logo.png'
+import { Link } from 'react-router-dom'
 
 const Dashboard = () => {
+
   return (
     <div className={styles.container}>
       <img src={logo} className={styles.logo}></img>
@@ -11,8 +13,12 @@ const Dashboard = () => {
           <div>Alunos matriculados</div>
           <p>323</p>
         </div>
-          <button className={styles.adicionarTurma} ><p>Adicionar turma</p><img></img></button>
-          <button className={styles.adicionarAluno}><p>Adicionar aluno</p></button>
+          <button className={styles.adicionarTurma}>
+            <p>Adicionar turma</p><img></img>
+          </button>
+          <button className={styles.adicionarAluno}>
+            <Link to="AdicionarAluno"><p>Adicionar aluno</p></Link>
+          </button>
       </div>
       <div className={styles.menu}>
         <button name="visao-geral">Visão Geral</button>

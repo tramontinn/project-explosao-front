@@ -24,3 +24,532 @@
 
     color: #FFFFFF;
 }
+
+.infosAluno {
+    position: absolute;
+    width: 153px;
+    height: 17px;
+    left: 88px;
+    top: 92px;
+    
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+    
+    display: flex;
+    align-items: center;
+    
+    color: #FFFFFF;
+}
+
+.infosAluno span {
+    position: absolute;
+    width: 902.5px;
+    height: 0px;
+    left: 0px;
+    top: 19.5px;
+    
+    border: 1px solid #FFD302;
+}
+
+.name {
+    box-sizing: border-box;
+
+/* Auto layout */
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 13px 17px;
+    gap: 10px;
+
+    position: absolute;
+    width: 440px;
+    height: 43px;
+    left: 68px;
+    top: 173px;
+
+    background: #090909;
+    border: 1px solid #6B6B6B;
+    border-radius: 10px;
+}
+
+.labelName {
+    position: absolute;
+    width: 110px;
+    height: 17px;
+    left: 85px;
+    top: 148px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+
+.date {
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 13px 17px;
+    gap: 10px;
+
+    position: absolute;
+    width: 176px;
+    height: 43px;
+    left: 528px;
+    top: 173px;
+
+    background: #090909;
+    border: 1px solid #6B6B6B;
+    border-radius: 10px;
+
+    color: #6B6B6B;
+}
+
+.labelDate {
+    position: absolute;
+    width: 144px;
+    height: 17px;
+    left: 545px;
+    top: 148px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+
+.telefone {
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 13px 17px;
+    gap: 10px;
+
+    position: absolute;
+    width: 244px;
+    height: 43px;
+    left: 724px;
+    top: 173px;
+
+    background: #090909;
+    border: 1px solid #6B6B6B;
+    border-radius: 10px;
+}
+
+.labelTelefone {
+    position: absolute;
+    width: 61px;
+    height: 17px;
+    left: 741px;
+    top: 148px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+
+.cpf {
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 13px 17px;
+    gap: 10px;
+
+    position: absolute;
+    width: 245px;
+    height: 43px;
+    left: 68px;
+    top: 264px;
+
+    background: #090909;
+    border: 1px solid #6B6B6B;
+    border-radius: 10px;
+}
+
+.labelCPF {
+    position: absolute;
+    width: 29px;
+    height: 17px;
+    left: 85px;
+    top: 239px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+
+.RG {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 13px 17px;
+    gap: 10px;
+
+    position: absolute;
+    width: 176px;
+    height: 43px;
+    left: 332px;
+    top: 264px;
+
+    background: #090909;
+    border: 1px solid #6B6B6B;
+    border-radius: 10px;
+}
+
+.labelRG {
+    position: absolute;
+    width: 21px;
+    height: 17px;
+    left: 347px;
+    top: 239px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+
+.email {
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 13px 17px;
+    gap: 10px;
+
+    position: absolute;
+    width: 440px;
+    height: 43px;
+    left: 528px;
+    top: 264px;
+
+    background: #090909;
+    border: 1px solid #6B6B6B;
+    border-radius: 10px;
+}
+
+.labelEmail {
+    position: absolute;
+    width: 41px;
+    height: 17px;
+    left: 545px;
+    top: 239px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+
+.endereco {
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 13px 17px;
+    gap: 10px;
+
+    position: absolute;
+    width: 440px;
+    height: 43px;
+    left: 68px;
+    top: 355px;
+
+    background: #090909;
+    border: 1px solid #6B6B6B;
+    border-radius: 10px;
+}
+
+.labelEndereco {
+    position: absolute;
+    width: 68px;
+    height: 17px;
+    left: 85px;
+    top: 330px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+
+.bairro {
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 13px 17px;
+    gap: 10px;
+
+    position: absolute;
+    width: 210px;
+    height: 43px;
+    left: 528px;
+    top: 355px;
+
+    background: #090909;
+    border: 1px solid #6B6B6B;
+    border-radius: 10px;
+}
+
+.labelBairro {
+    position: absolute;
+    width: 43px;
+    height: 17px;
+    left: 545px;
+    top: 330px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+
+.cidade {
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 13px 17px;
+    gap: 10px;
+
+    position: absolute;
+    width: 210px;
+    height: 43px;
+    left: 758px;
+    top: 355px;
+
+    background: #090909;
+    border: 1px solid #6B6B6B;
+    border-radius: 10px;
+}
+
+.labelCidade {
+    position: absolute;
+    width: 51px;
+    height: 17px;
+    left: 765px;
+    top: 330px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+
+.problema {
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 13px 17px;
+    gap: 10px;
+
+    position: absolute;
+    width: 440px;
+    height: 134px;
+    left: 68px;
+    top: 453px;
+
+    background: #090909;
+    border: 1px solid #6B6B6B;
+    border-radius: 10px;
+}
+
+.problema input::placeholder {
+    /* Alinhar o texto do placeholder no início */
+    text-align: start;
+}
+
+.labelProblema {
+    position: absolute;
+    width: 246px;
+    height: 17px;
+    left: 85px;
+    top: 428px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+
+.responsavel {
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 13px 17px;
+    gap: 10px;
+
+    position: absolute;
+    width: 440px;
+    height: 43px;
+    left: 528px;
+    top: 453px;
+
+    background: #090909;
+    border: 1px solid #6B6B6B;
+    border-radius: 10px;
+}
+
+.labelResponsavel {
+    position: absolute;
+    width: 155px;
+    height: 17px;
+    left: 545px;
+    top: 428px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+
+    color: #6B6B6B;
+}
+
+.telefoneR {
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 13px 17px;
+    gap: 10px;
+
+    position: absolute;
+    width: 244px;
+    height: 43px;
+    left: 528px;
+    top: 544px;
+
+    background: #090909;
+    border: 1px solid #6B6B6B;
+    border-radius: 10px;
+}
+
+.labelTelefoneR {
+    position: absolute;
+    width: 149px;
+    height: 17px;
+    left: 545px;
+    top: 519px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+
+    display: flex;
+    align-items: center;
+
+    color: #6B6B6B;
+}
+
+.enviar {
+    position: absolute;
+    width: 203px;
+    height: 50px;
+    left: 772px;
+    bottom: 49px;
+
+    background: #FFD304;
+    border-radius: 15px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #090909;
+}

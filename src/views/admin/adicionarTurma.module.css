@@ -9,11 +9,11 @@
 
 .phrase {
     position: absolute;
-    width: 192px;
+    width: 200px;
     height: 29px;
     left: 34px;
     top: 28px;
-
+    
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
@@ -21,7 +21,7 @@
     line-height: 29px;
     display: flex;
     align-items: center;
-
+    
     color: #FFFFFF;
 }
 
@@ -55,8 +55,51 @@
     border: 1px solid #FFD302;
 }
 
-.name {
+.classroomName {
     box-sizing: border-box;
+
+    /* Auto layout */
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 13px 17px;
+    gap: 10px;
+    
+    position: absolute;
+    width: 440px;
+    height: 43px;
+    left: 68px;
+    top: 173px;
+    
+    background: #090909;
+    border: 1px solid #6B6B6B;
+    border-radius: 10px;
+}
+
+.labelclassroomName {
+    position: absolute;
+    width: 114px;
+    height: 17px;
+    left: 85px;
+    top: 148px;
+    
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+    
+    display: flex;
+    align-items: center;
+    
+    color: #FFFFFF;
+}
+
+.professorName{
+    box-sizing: border-box;
+
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -66,58 +109,17 @@
     position: absolute;
     width: 440px;
     height: 43px;
-    left: 68px;
-    top: 173px;
-
-    background: #090909;
-    border: 1px solid #6B6B6B;
-    border-radius: 10px;
-}
-
-.labelName {
-    position: absolute;
-    width: 110px;
-    height: 17px;
-    left: 85px;
-    top: 148px;
-
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 17px;
-
-    display: flex;
-    align-items: center;
-
-    color: #FFFFFF;
-}
-
-.date {
-    box-sizing: border-box;
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 13px 17px;
-    gap: 10px;
-
-    position: absolute;
-    width: 176px;
-    height: 43px;
     left: 528px;
     top: 173px;
 
     background: #090909;
     border: 1px solid #6B6B6B;
     border-radius: 10px;
-
-    color: #6B6B6B;
 }
 
-.labelDate {
+.labelprofessorName {
     position: absolute;
-    width: 144px;
+    width: 136px;
     height: 17px;
     left: 545px;
     top: 148px;
@@ -135,9 +137,9 @@
     color: #FFFFFF;
 }
 
-.telefone {
+.weekDay {
+    
     box-sizing: border-box;
-
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -147,56 +149,17 @@
     position: absolute;
     width: 244px;
     height: 43px;
-    left: 724px;
-    top: 173px;
-
-    background: #090909;
-    border: 1px solid #6B6B6B;
-    border-radius: 10px;
-}
-
-.labelTelefone {
-    position: absolute;
-    width: 61px;
-    height: 17px;
-    left: 741px;
-    top: 148px;
-
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 17px;
-
-    display: flex;
-    align-items: center;
-
-    color: #FFFFFF;
-}
-
-.cpf {
-    box-sizing: border-box;
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 13px 17px;
-    gap: 10px;
-
-    position: absolute;
-    width: 245px;
-    height: 43px;
     left: 68px;
     top: 264px;
 
-    background: #090909;
+    background: #FFFFFF;
     border: 1px solid #6B6B6B;
     border-radius: 10px;
 }
 
-.labelCPF {
+.labelweekDay {
     position: absolute;
-    width: 29px;
+    width: 106px;
     height: 17px;
     left: 85px;
     top: 239px;
@@ -206,14 +169,16 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
+    /* identical to box height */
 
     display: flex;
     align-items: center;
 
     color: #FFFFFF;
+
 }
 
-.RG {
+.classroomTime {
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
@@ -232,11 +197,11 @@
     border-radius: 10px;
 }
 
-.labelRG {
+.labelclassroomTime {
     position: absolute;
-    width: 21px;
+    width: 116px;
     height: 17px;
-    left: 347px;
+    left: 349px;
     top: 239px;
 
     font-family: 'Montserrat';
@@ -244,6 +209,7 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
+    /* identical to box height */
 
     display: flex;
     align-items: center;
@@ -251,9 +217,8 @@
     color: #FFFFFF;
 }
 
-.email {
+.classroomEndTime {
     box-sizing: border-box;
-
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -261,7 +226,7 @@
     gap: 10px;
 
     position: absolute;
-    width: 440px;
+    width: 176px;
     height: 43px;
     left: 528px;
     top: 264px;
@@ -271,9 +236,9 @@
     border-radius: 10px;
 }
 
-.labelEmail {
+.labelclassroomEndTime {
     position: absolute;
-    width: 41px;
+    width: 150px;
     height: 17px;
     left: 545px;
     top: 239px;
@@ -291,7 +256,7 @@
     color: #FFFFFF;
 }
 
-.endereco {
+.status {
     box-sizing: border-box;
 
     display: flex;
@@ -301,22 +266,22 @@
     gap: 10px;
 
     position: absolute;
-    width: 440px;
+    width: 123px;
     height: 43px;
-    left: 68px;
-    top: 355px;
+    left: 724px;
+    top: 264px;
 
     background: #090909;
     border: 1px solid #6B6B6B;
-    border-radius: 10px;
+    border-radius: 10px 0px 0px 10px;
 }
 
-.labelEndereco {
+.labelstatus {
     position: absolute;
-    width: 68px;
+    width: 115px;
     height: 17px;
-    left: 85px;
-    top: 330px;
+    left: 741px;
+    top: 239px;
 
     font-family: 'Montserrat';
     font-style: normal;
@@ -329,209 +294,6 @@
     align-items: center;
 
     color: #FFFFFF;
-}
-
-.bairro {
-    box-sizing: border-box;
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 13px 17px;
-    gap: 10px;
-
-    position: absolute;
-    width: 210px;
-    height: 43px;
-    left: 528px;
-    top: 355px;
-
-    background: #090909;
-    border: 1px solid #6B6B6B;
-    border-radius: 10px;
-}
-
-.labelBairro {
-    position: absolute;
-    width: 43px;
-    height: 17px;
-    left: 545px;
-    top: 330px;
-
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 17px;
-    /* identical to box height */
-
-    display: flex;
-    align-items: center;
-
-    color: #FFFFFF;
-}
-
-.cidade {
-    box-sizing: border-box;
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 13px 17px;
-    gap: 10px;
-
-    position: absolute;
-    width: 210px;
-    height: 43px;
-    left: 758px;
-    top: 355px;
-
-    background: #090909;
-    border: 1px solid #6B6B6B;
-    border-radius: 10px;
-}
-
-.labelCidade {
-    position: absolute;
-    width: 51px;
-    height: 17px;
-    left: 765px;
-    top: 330px;
-
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 17px;
-    /* identical to box height */
-
-    display: flex;
-    align-items: center;
-
-    color: #FFFFFF;
-}
-
-.problema {
-    box-sizing: border-box;
-
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 13px 17px;
-    gap: 10px;
-
-    position: absolute;
-    width: 440px;
-    height: 134px;
-    left: 68px;
-    top: 453px;
-
-    background: #090909;
-    border: 1px solid #6B6B6B;
-    border-radius: 10px;
-}
-
-.problema input::placeholder {
-    /* Alinhar o texto do placeholder no início */
-    text-align: start;
-}
-
-.labelProblema {
-    position: absolute;
-    width: 246px;
-    height: 17px;
-    left: 85px;
-    top: 428px;
-
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 17px;
-
-    display: flex;
-    align-items: center;
-
-    color: #FFFFFF;
-}
-
-.responsavel {
-    box-sizing: border-box;
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 13px 17px;
-    gap: 10px;
-
-    position: absolute;
-    width: 440px;
-    height: 43px;
-    left: 528px;
-    top: 453px;
-
-    background: #090909;
-    border: 1px solid #6B6B6B;
-    border-radius: 10px;
-}
-
-.labelResponsavel {
-    position: absolute;
-    width: 155px;
-    height: 17px;
-    left: 545px;
-    top: 428px;
-
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 17px;
-    /* identical to box height */
-
-    display: flex;
-    align-items: center;
-
-    color: #6B6B6B;
-}
-
-.telefoneR {
-    box-sizing: border-box;
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 13px 17px;
-    gap: 10px;
-
-    position: absolute;
-    width: 244px;
-    height: 43px;
-    left: 528px;
-    top: 544px;
-
-    background: #090909;
-    border: 1px solid #6B6B6B;
-    border-radius: 10px;
-}
-
-.labelTelefoneR {
-    position: absolute;
-    width: 149px;
-    height: 17px;
-    left: 545px;
-    top: 519px;
-
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 17px;
-
-    display: flex;
-    align-items: center;
-
-    color: #6B6B6B;
 }
 
 .enviar {
@@ -560,6 +322,7 @@
     height: 50px;
     left: 633px;
     bottom: 49px;
+
     background-color: transparent;
     border-radius: none;
     outline: none;
@@ -573,7 +336,7 @@
     right: 0px;
     top: 0px;
     bottom: 0px;
-    
+
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
@@ -582,7 +345,6 @@
     display: flex;
     align-items: center;
     text-align: center;
-
 
     color: #6B6B6B;
 }

@@ -200,6 +200,9 @@ button[name='turmas']:focus {
 
     background-color: #090909;
     border-radius: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
 }
 
 .adicionarTurma p {
@@ -235,6 +238,9 @@ button[name='turmas']:focus {
 
     background: #FFD302;
     border-radius: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
 }
 
 .adicionarAluno p {

@@ -6,6 +6,7 @@ import Home from './views/index'
 import Login from './views/login'
 import Dashboard from './views/admin/dashboard'
 import AdicionarAluno from './views/admin/adicionarAluno'
+import AdicionarTurma from './views/admin/adicionarTurma'
 import PrivateRoute from './privateRoute'
 
 
@@ -20,6 +21,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path="/admin">
             <Route path="dashboard" element={<PrivateRoute><Dashboard/></PrivateRoute>} />
             <Route path="dashboard/adicionarAluno" element={<PrivateRoute><AdicionarAluno/></PrivateRoute>}/>
+            <Route path="dashboard/adicionarTurma" element={<PrivateRoute><AdicionarTurma/></PrivateRoute>}/>
           </Route>
         </Routes>
     </BrowserRouter>  

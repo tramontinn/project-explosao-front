@@ -14,7 +14,7 @@ const Dashboard = () => {
           <p>323</p>
         </div>
           <button className={styles.adicionarTurma}>
-            <p>Adicionar turma</p><img></img>
+            <Link to="AdicionarTurma"><p>Adicionar turma</p><img></img></Link>
           </button>
           <button className={styles.adicionarAluno}>
             <Link to="AdicionarAluno"><p>Adicionar aluno</p></Link>

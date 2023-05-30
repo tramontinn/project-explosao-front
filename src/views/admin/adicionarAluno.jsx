@@ -1,8 +1,15 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import styles from './adicionarAluno.module.css'
+import { useNavigate } from 'react-router-dom'
+
 
 
 const adicionarAluno = () => {
+  const navigate = useNavigate()
+
+  const handleClick = () => {
+      navigate('/admin/dashboard')
+  }
 
   const [name, setName] = useState('');
   const [phoneNumber, setphoneNumber] = useState('');
@@ -19,6 +26,8 @@ const adicionarAluno = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    
+  const token = localStorage.getItem('token')
   
   const dados = {
     name,
@@ -34,21 +43,23 @@ const adicionarAluno = () => {
     birthday,
     registration
   }
-  // fetch('http://localhost:8001/explosao-service/student/', {
-  //   method: 'POST',
-  //   Headers: {
-  //     'Content-type': 'aplication/json',
-  //   },
-  //   body: JSON.stringify(dados),
-  // })
-  // .then((response) => response.json())
-  // .then((data) => {
-  //   console.log(data)
-  // })
-  // .catch((error) => {
-  //   console.log(error)
-  // })
-  console.log(dados)
+
+  fetch('http://localhost:8001/explosao-service/student/', {
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': `Bearer ${token}` 
+    },
+    method: 'POST',
+    body: JSON.stringify(dados),
+  })
+  .then((response) => response.json())
+  .then((data) => {
+    console.log("usuário cadastrado")
+    navigate('/admin/dashboard')
+  })
+  .catch((error) => {
+    console.log(error,'erro ao inserir os dados')
+  })
 }
 
 
@@ -103,6 +114,7 @@ const adicionarAluno = () => {
 
       <button type='submit' className={styles.enviar}>Enviar</button>
     
+      <button onClick={handleClick} className={styles.cancelar}><p>Cancelar</p></button>
     </form>
   )
 }

@@ -54,6 +54,7 @@ const adicionarAluno = () => {
   })
   .then((response) => response.json())
   .then((data) => {
+    console.log(JSON.stringify(dados))
     console.log("usuário cadastrado")
     navigate('/admin/dashboard')
   })
@@ -86,7 +87,7 @@ const adicionarAluno = () => {
 
 
       <label className={styles.labelEmail}>Email</label>
-      <input type='email' value={registration} onChange={(event) => setRegistration(event.target.value)} placeholder='Email' className={styles.email}/>
+      <input type='text' value={registration} onChange={(event) => setRegistration(event.target.value)} placeholder='Email' className={styles.email}/>
 
 
       <label className={styles.labelEndereco}>Endereço</label>

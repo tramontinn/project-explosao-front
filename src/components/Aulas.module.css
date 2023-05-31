@@ -1,120 +1,610 @@
 .background{
     position: absolute;
-    margin-top: 720px;
-    /* width: 100vw;
-    height: 100vh; */
+    width: 1440px;
+    height: 2041px;
     left: 0px;
-    top: 766px;
+    top: 1534px;
+    
     background: #090909;
-    width: 100vw;
-    height: 1815px;
 }
 
 .entorno {
     position: absolute;
-    margin-top: 720px;
+    width: 237px;
+    height: 64px;
+    left: 601px;
+
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
     font-size: 36px;
     line-height: 64px;
-    margin-left: 44%;
+    /* identical to box height, or 178% */
+
+    text-align: center;
+
     color: #FFD302;
 }
 
 .aulas {
     box-sizing: border-box;
+
     position: absolute;
     width: 1160px;
-    height: 1500px;
-    left: 20%;
-    top: 1800px;
+    height: 1840px;
+    left: 140px;
+    top: 150px;
+    
     border: 1px dashed #9747FF;
     border-radius: 5px;
 }
 
 .aulaJazz {
-    background: #1F272A;
-    display: flex;
-    height: 240px;
+    position: absolute;
     width: 1120px;
-    margin: 15px;
-}
-
-.aulaJazz > img {
-    margin: 21px 435px 20px 420px;
-}
-
-.aulaJazz > h1 {
-    position: absolute;
-    color: #FFD302;
-    left: 70.71%;
-    right: 6.52%;
-    top: 7.25%;
-    bottom: 9.58%;
-}
-
-.aulaJazz > p {
-    position: absolute;
-    color: #FFFFFF;
-    left: 70.71%;
-    right: 6.52%;
-    top: 9.25%;
-    bottom: 9.58%;
+    height: 240px;
+    left: 20px;
+    top: 20px;
+    background: #1F272A;
 }
 
 .jazz {
     position: absolute;
-    margin: 144px 423px 32px 32px;
+    left: 3.21%;
+    right: 37.77%;
+    top: 60%;
+    bottom: 13.33%;
+    
     font-family: 'Montserrat';
     font-style: normal;
-    font-weight: 800;
-    font-size: 96px;
+    font-weight: 900;
+    font-size: 95px;
     line-height: 64px;
+    /* border: 1px solid #FFD302; */
     color: #FFD302;
 }
 
-.aulaDu {
-    background: #1F272A;
-    display: flex;
-    height: 240px;
-    width: 1120px;
-    margin: 15px;
-}
-
-.aulaDu > img {
-    margin: 21px 435px 20px 420px;
-}
-
-.dancaUrbana {
+.jazzSobre {
     position: absolute;
-    margin: 250px 423px 32px 36px;
+    left: 67.23%;
+    right: 9.11%;
+    top: 15.42%;
+    bottom: 42.08%;
+    
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    
+    color: #FFFFFF;
+}
+
+.aulaJazz > button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 27px;
+    gap: 10px;
+
+    position: absolute;
+    left: 67.23%;
+    right: 17.23%;
+    top: 73.33%;
+    bottom: 11.67%;
+
+    background: #FFD302;
+    border-radius: 62px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.aulaJazz > button p {
+    width: 137px;
+    height: 17px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+
+    text-transform: uppercase;
+
+    color: #090909;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.aulaDancaUrbana {
+    position: absolute;
+    width: 1120px;
+    height: 240px;
+    left: 20px;
+    top: 280px;
+    background: #1F272A;
+}
+
+.dancaurbana {
+    position: absolute;
+    left: 3.21%;
+    right: 50.71%;
+    top: 25%;
+    bottom: 8.33%;
+    
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 900;
     font-size: 96px;
     line-height: 80px;
+    
     color: #FFD302;
-    height: 160px;
-    width: 516px;
-    left: 16px;
-    top: 70px;
+    /* border: 1px solid #FFD302;  */
 }
 
-.aulaDu > h1 {
+.dancaUrbanaSobre {
     position: absolute;
-    color: #FFD302;
-    left: 70.71%;
-    right: 6.52%;
-    top: 23.5%;
-    bottom: 9.58%;
-}
+    left: 67.23%;
+    right: 3.39%;
+    top: 15.42%;
+    bottom: 35.42%;
 
-.aulaDu > p {
-    position: absolute;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+
     color: #FFFFFF;
-    left: 70.71%;
-    right: 6.52%;
-    top: 25.5%;
-    bottom: 9.58%;
+}
+
+.aulaDancaUrbana > button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 27px;
+    gap: 10px;
+
+    position: absolute;
+    left: 67.23%;
+    right: 17.23%;
+    top: 73.33%;
+    bottom: 11.67%;
+
+    background: #FFD302;
+    border-radius: 62px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.aulaDancaUrbana > button p {
+    width: 137px;
+    height: 17px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+
+    color: #090909;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
+
+.aulaContemp {
+    position: absolute;
+    width: 1120px;
+    height: 240px;
+    left: 20px;
+    top: 540px;
+    background: #1F272A;
+}
+
+.contemp {
+    position: absolute;
+    left: 3.21%;
+    right: 50.27%;
+    top: 25%;
+    bottom: 8.33%;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 96px;
+    line-height: 80px;
+    /* or 83% */
+
+
+    /* border: 1px solid #FFD302; */
+    color: #FFD302;
+}
+
+.sobreContemp {
+    position: absolute;
+    left: 67.23%;
+    right: 7.05%;
+    top: 15.42%;
+    bottom: 35.42%;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    /* or 112% */
+
+
+    color: #FFFFFF;
+}
+
+.aulaContemp > button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 27px;
+    gap: 10px;
+
+    position: absolute;
+    left: 67.23%;
+    right: 17.23%;
+    top: 73.33%;
+    bottom: 11.67%;
+
+    background: #FFD302;
+    border-radius: 62px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.aulaContemp > button p {
+    width: 137px;
+    height: 17px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+
+    text-transform: uppercase;
+
+    color: #090909;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.aulaBallet {
+    position: absolute;
+    width: 1120px;
+    height: 240px;
+    left: 20px;
+    top: 800px;
+    background: #1F272A;
+}
+
+.ballet {
+    position: absolute;
+    left: 3.21%;
+    right: 61.25%;
+    top: 60%;
+    bottom: 13.33%;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 96px;
+    line-height: 64px;
+
+    /* border: 1px solid #FFD302; */
+    color: #FFD302;
+}
+
+.sobreBallet {
+    position: absolute;
+    left: 67.23%;
+    right: 7.86%;
+    top: 15.42%;
+    bottom: 35.42%;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+
+    color: #FFFFFF;
+}
+
+.aulaBallet > button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 27px;
+    gap: 10px;
+
+    position: absolute;
+    left: 67.23%;
+    right: 17.23%;
+    top: 73.33%;
+    bottom: 11.67%;
+
+    background: #FFD302;
+    border-radius: 62px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.aulaBallet > button p {
+    width: 137px;
+    height: 17px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+
+    text-transform: uppercase;
+
+    color: #090909;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.aulaAcroba {
+    position: absolute;
+    width: 1120px;
+    height: 240px;
+    left: 20px;
+    top: 1060px;
+    background: #1F272A;
+}
+
+.acroba {
+    position: absolute;
+    left: 3.21%;
+    right: 34.55%;
+    top: 60%;
+    bottom: 13.33%;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 96px;
+    line-height: 64px;
+
+    /* border: 1px solid #FFD302; */
+    color: #FFD302;
+}
+
+.sobreAcroba {
+    position: absolute;
+    left: 67.23%;
+    right: 8.84%;
+    top: 15.42%;
+    bottom: 35.42%;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+
+    color: #FFFFFF;
+}
+
+.aulaAcroba > button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 27px;
+    gap: 10px;
+
+    position: absolute;
+    left: 67.23%;
+    right: 17.23%;
+    top: 73.33%;
+    bottom: 11.67%;
+
+    background: #FFD302;
+    border-radius: 62px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.aulaAcroba > button p {
+    width: 137px;
+    height: 17px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+
+    text-transform: uppercase;
+
+    color: #090909;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.aulaTeatro {
+    position: absolute;
+    width: 1120px;
+    height: 240px;
+    left: 20px;
+    top: 1320px;
+    background: #1F272A;
+}
+
+.teatro {
+    position: absolute;
+    left: 3.21%;
+    right: 59.46%;
+    top: 60%;
+    bottom: 13.33%;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 96px;
+    line-height: 64px;
+
+    /* border: 1px solid #FFD302; */
+    color: #FFD302;
+}
+
+.sobreTeatro {
+    position: absolute;
+    left: 67.23%;
+    right: 11.16%;
+    top: 15.42%;
+    bottom: 35.42%;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: #FFFFFF;
+}
+
+.aulaTeatro > button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 27px;
+    gap: 10px;
+
+    position: absolute;
+    left: 67.23%;
+    right: 17.23%;
+    top: 73.33%;
+    bottom: 11.67%;
+
+    background: #FFD302;
+    border-radius: 62px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.aulaTeatro > button p {
+    width: 137px;
+    height: 17px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+
+    text-transform: uppercase;
+
+    color: #090909;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.aulaJiu {
+    position: absolute;
+    width: 1120px;
+    height: 240px;
+    left: 20px;
+    top: 1580px;
+    background: #1F272A;
+}
+
+.jiu {
+    position: absolute;
+    left: 3.21%;
+    right: 53.04%;
+    top: 60%;
+    bottom: 13.33%;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 96px;
+    line-height: 64px;
+
+    /* border: 1px solid #FFD302; */
+    color: #FFD302;
+}
+
+.sobreJiu {
+    position: absolute;
+    left: 67.23%;
+    right: 7.05%;
+    top: 15.42%;
+    bottom: 35.42%;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+
+    color: #FFFFFF;
+}
+
+.aulaJiu > button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 27px;
+    gap: 10px;
+
+    position: absolute;
+    left: 67.23%;
+    right: 17.23%;
+    top: 73.33%;
+    bottom: 11.67%;
+
+    background: #FFD302;
+    border-radius: 62px;
+}
+
+.aulaJiu > button p {
+    width: 137px;
+    height: 17px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+
+    text-transform: uppercase;
+
+    color: #090909;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
 }

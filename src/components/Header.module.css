@@ -1,6 +1,6 @@
 .cabec {
     position: absolute;
-    width: 1903px;
+    width: 1440px;
     height: 80px;
     left: 0px;
     top: 0px;
@@ -18,11 +18,11 @@
     gap: 31px;
     position: absolute;
     right: 0;
-    padding-right: 100px;
     padding-top: 50px;
     color: #FFFFFF;
     font-size: 25px;
     flex-direction: row-reverse;
+    padding-right: 140px;
 }
 
 .socials > a {

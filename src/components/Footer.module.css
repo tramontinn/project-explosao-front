@@ -1,11 +1,10 @@
 .container {
     position: absolute;
-    width: 1672px;
+    width: 1440px;
     height: 570px;
     left: 0px;
-    top: 5323px;
+    top: 5360px;
     background: #1F272A;
-    padding-left: 248px;
 }
 
 .logo {

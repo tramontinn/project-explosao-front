@@ -37,7 +37,7 @@
 
 .contacts {
     position: absolute;
-    padding: 70px 160px 452px 1064px;
+    margin: 70px 160px 452px 1064px;
 }
 
 .creators {
@@ -49,7 +49,7 @@
     text-align: right;
     color: #FFFFFF;
     position: absolute;
-    padding: 403px 160px 123px 892px;
+    margin: 403px 160px 123px 892px;
     max-width: 448;
     max-height: 38px;
 }
@@ -62,7 +62,7 @@
     font-size: 16px;
     line-height: 19px;
     color: #FFFFFF;
-    padding: 403px 864px 123px 160px;
+    margin: 403px 864px 123px 160px;
     max-width: 416px;
     max-height: 38px;
 }
@@ -73,5 +73,5 @@
     color: #FFFFFF;
     font-size: 25px;
     position: absolute;
-    padding: 148px 281px 390px 1133px;
+    margin: 148px 281px 390px 1133px;
 }

@@ -40,7 +40,7 @@ const adicionarAluno = () => {
     phoneList,
     guardianName,
     cpf,
-    birthday,
+    birthday:birthday.toISOString(),
     registration
   }
 

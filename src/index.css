@@ -46,3 +46,16 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+
+.swiper-pagination-bullet-active {
+    background-color: #FFD302!important;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    color: rgba(255, 255, 255, 0.4)!important;
+    
+}
+
+.swiper-button-next:after, .swiper-button-prev:after {
+    font-size: 22px!important;
+}

@@ -24,13 +24,12 @@
 
 .entorno {
     box-sizing: border-box;
-
     position: absolute;
-    width: 1169px;
-    height: 619px;
+    width: calc(100% - 280px);
     left: 140px;
     top: 95px;
     border: 1px dashed #9747FF;
     border-radius: 5px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
-

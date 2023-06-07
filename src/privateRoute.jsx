@@ -10,8 +10,6 @@ const PrivateRoute = ({children}) => {
     setIsAuthenticated(token !== null)
   }, [])
 
-  //let isAuthenticated = true
-
   if (!isAuthenticated) {
     return <Navigate to="/login" replace state={{from: location}}></Navigate>
   }

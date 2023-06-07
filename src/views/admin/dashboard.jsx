@@ -1,9 +1,42 @@
-import React from 'react'
+import React, { useEffect, useState} from 'react'
 import styles from './dashboard.module.css'
 import logo from '../../images/Logo.png'
 import { Link } from 'react-router-dom'
+import moment from 'moment'
+
 
 const Dashboard = () => {
+  const birthday = moment("2000-01-01T00:00:00Z")
+  const idade = moment().diff(birthday, 'years')
+
+  const [dados, setDados] = useState(null);
+
+  useEffect(() => {
+  const fetchData = async () => {
+    try {
+      const token = localStorage.getItem('token')
+      if (!token) {
+        throw new Error('Sem token!')
+      }
+
+      const headers = {
+        Authorization: `Bearer ${token}`
+      };
+
+      const response = await fetch('http://localhost:8001/explosao-service/student/', { headers });
+      const data = await response.json();
+      setDados(data);
+
+    } catch (error) {
+      console.log('Erro ao buscar os dados', error)
+    }
+  };
+  fetchData();
+}, []);  
+
+  if(!dados) {
+    return <div>Carregando...</div>
+  }
 
   return (
     <div className={styles.container}>
@@ -34,8 +67,17 @@ const Dashboard = () => {
           <p name="turma">Turmas</p>
           <p name="ultimo">Último pagamento</p>
           <p name="situacao">Situação</p>
-          <li className={styles.listAlunos}></li>
         </ul>
+        <div>{dados.name}</div>
+        {/* {dados.map((aluno) => (
+          <div key={aluno.id} className={styles.aluno}>
+            <p>{aluno.nome}</p>
+            <p>{aluno.idade}</p>
+            <p>{aluno.turma}</p>
+            <p>{aluno.ultimoPagamento}</p>
+            <p>{aluno.situacao}</p>
+          </div>
+        ))} */}
       </div>
     </div>
   )

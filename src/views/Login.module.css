@@ -45,6 +45,9 @@ input {
     text-align: center;
     background-color: yellow;
     color: #090909;
+    outline: none;
+    border: none;
+    cursor: pointer;
 }
 
 .button:hover{

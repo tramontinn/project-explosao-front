@@ -27,13 +27,13 @@ const Login = () => {
       const data = await response.json()
       
       if (response.ok) {
-        console.log('login bem sucedido', data)
+        console.log('login bem sucedido')
         const token = data.additionalInfo.jwtToken
         localStorage.setItem('token', token)
         setUsername(data.additionalInfo.username)
         navigate('/admin/dashboard')
       } else {
-        console.log('login falhou', data)
+        console.log('login falhou')
       }
   
     } catch (error) {

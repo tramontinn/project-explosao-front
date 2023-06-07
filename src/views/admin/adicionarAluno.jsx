@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import styles from './adicionarAluno.module.css'
 import { useNavigate } from 'react-router-dom'
+import moment from 'moment'
 
 
 
@@ -40,9 +41,11 @@ const adicionarAluno = () => {
     phoneList,
     guardianName,
     cpf,
-    birthday:birthday.toISOString(),
+    birthday:moment(birthday).format("YYYY-MM-DDTHH:mm:ss[Z]"),
     registration
   }
+
+  console.log(dados)
 
   fetch('http://localhost:8001/explosao-service/student/', {
     headers: {

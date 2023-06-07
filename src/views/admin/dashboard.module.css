@@ -128,7 +128,7 @@ button[name='turmas']:focus {
 
 
     position: absolute;
-    width: 1072px;
+    width: 1054px;
     height: 150px;
     left: 346px;
     top: 114px;
@@ -269,11 +269,11 @@ button[name='turmas']:focus {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 26px 40px;
+    padding: 26px 0px;
     gap: 693px;
 
     position: absolute;
-    width: 1116px;
+    width: 1065px;
     height: 111px;
     left: 324px;
     top: 0px;

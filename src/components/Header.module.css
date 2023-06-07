@@ -97,6 +97,9 @@
 
     background: #FFD302;
     border-radius: 62px;
+    outline: none;
+    border: none;
+    cursor: pointer;
 }
 
 .fraseBT {

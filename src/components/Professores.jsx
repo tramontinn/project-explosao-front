@@ -4,10 +4,10 @@ import sonia from '../images/sonia_macedo.png'
 import leandro from '../images/leandro_rosa.png'
 import elder from '../images/elder_rocha.png'
 import bruno from '../images/bruno_guerra.png'
-// import mateus from '../images/mateus_policena.png'
-// import adriano from '../images/adriano_guerra.png'
-// import vanusa from '../images/vanusaa_chaves.png'
-// import luisa from '../images/luisa_carmo.png'
+import mateus from '../images/mateus_policena.png'
+import adriano from '../images/adriano_guerra.png'
+import vanusa from '../images/vanusa_chaves.png'
+import luisa from '../images/luisa_carmo.png'
 
 import ProfCard from './ProfCard'
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -49,6 +49,30 @@ const professorsData = [
     job: 'Professor de dança',
     description: ' '
     },
+    {
+    image: mateus,
+    name: 'Mateus Policena',
+    job: 'Professor de dança',
+    description: ' '
+    },
+    {
+    image: adriano,
+    name: 'Adriano Guerra',
+    job: 'Professor de Jiu-Jitsu',
+    description: ' '
+    },
+    {
+    image: vanusa,
+    name: 'Vanusa Chaves',
+    job: 'Professora de Yoga',
+    description: ' '
+    },
+    {
+    image: luisa,
+    name: 'Luisa do Carmo',
+    job: 'Professora de teatro',
+    description: ' '
+    },
 
 ]
 
@@ -62,9 +86,7 @@ function Professores() {
                 modules={[Navigation, Pagination, Scrollbar, A11y]}
                 spaceBetween={50}
                 slidesPerView={3}
-                onSlideChange={() => console.log('slide change')}
-                onSwiper={(swiper) => console.log(swiper)}
-                pagination={{ clickable: true }}
+                // pagination={{ clickable: true }}
                 navigation
             >
                 {professorsData.map(professor => <SwiperSlide key={professor.name}><ProfCard img={professor.image} name={professor.name} job={professor.job}/></SwiperSlide>)}

@@ -485,3 +485,10 @@ p[name='situacao'] {
     align-self: stretch;
     flex-grow: 0;
 }
+
+.infoAlunos {
+    display: flex;
+    color: #FFD302;
+    gap: 25px;
+    margin-top: 75px;
+}

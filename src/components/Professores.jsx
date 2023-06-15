@@ -23,55 +23,64 @@ const professorsData = [
     image: graciela,
     name: 'Graciela Souza',
     job: 'Diretora/Professora de dança',
-    description: ' '
+    description: ' ',
+    alt:'foto professora de dança Graciela'
     },
     {
     image: sonia,
     name: 'Sonia Macedo',
     job: 'Professora de dança',
-    description: ' '
+    description: ' ',
+    alt:'foto professora de dança Sonia'
     },
     {
     image: leandro,
     name: 'Leandro Rosa',
     job: 'Professor de dança',
-    description: ' '
+    description: ' ',
+    alt:'foto professor de dança Leandro'
     },
     {
     image: elder,
     name: 'Elder Rocha',
     job: 'Professor de dança',
-    description: ' '
+    description: ' ',
+    alt:'foto professor de dança Elder'
     },
     {
     image: bruno,
     name: 'Bruno',
     job: 'Professor de dança',
-    description: ' '
+    description: ' ',
+    alt:'foto professor de dança Bruno'
     },
     {
     image: mateus,
     name: 'Mateus Policena',
     job: 'Professor de dança',
-    description: ' '
+    description: ' ',
+    alt:'foto professor de dança Mateus'
     },
     {
     image: adriano,
     name: 'Adriano Guerra',
     job: 'Professor de Jiu-Jitsu',
-    description: ' '
+    description: ' ',
+    alt:'foto professor de Jiu-Jitsu Adriano'
     },
     {
     image: vanusa,
     name: 'Vanusa Chaves',
     job: 'Professora de Yoga',
-    description: ' '
+    description: ' ',
+    alt:'foto professora de yoga Vanusa'
     },
     {
     image: luisa,
     name: 'Luisa do Carmo',
     job: 'Professora de teatro',
-    description: ' '
+    description: ' ',
+    alt:'foto professora de teatro Luisa'
     },
 
 ]
@@ -89,7 +98,7 @@ function Professores() {
                 // pagination={{ clickable: true }}
                 navigation
             >
-                {professorsData.map(professor => <SwiperSlide key={professor.name}><ProfCard img={professor.image} name={professor.name} job={professor.job}/></SwiperSlide>)}
+                {professorsData.map(professor => <SwiperSlide key={professor.name}><ProfCard  img={professor.image} alt={professor.alt} name={professor.name} job={professor.job}/></SwiperSlide>)}
             </Swiper>
             </div>
         </main>

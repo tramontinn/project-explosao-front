@@ -1,10 +1,9 @@
 import styles from './Aulas.module.css'
-import aula from '../images/aula.png'
 
 function Aulas() {
     return (
         <main className={styles.background}>
-            <div className={styles.entorno}>Nossas aulas</div>
+            <div className={styles.entorno} id='meu-titulo'>Nossas aulas</div>
             <div className={styles.aulas}>
 
                 <div className={styles.aulaJazz}>

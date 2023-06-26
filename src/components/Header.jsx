@@ -10,10 +10,22 @@ function Header() {
             <div className={styles.cabec}>
                 <img src={logo} className={styles.logo}></img>
                 <ul className={styles.socials}>
-                    <Link to="login">Login</Link>
-                    <li><FaYoutube /></li>
-                    <li><FaFacebookF /></li>
-                    <li><FaInstagram /></li>
+                    {/* <Link to="login">Login</Link> */}
+                    <li>
+                        <a href='https://www.youtube.com/@grupoexplosaodadanca8891' className={styles.icon}>
+                            <FaYoutube />
+                        </a>
+                    </li>
+                    <li>
+                        <a href='https://www.facebook.com/explosaodadanca/' className={styles.icon}>
+                            <FaFacebookF />
+                        </a>
+                    </li>
+                    <li>
+                        <a href='https://www.instagram.com/grupo.explosao/' className={styles.icon}>
+                            <FaInstagram />
+                        </a>
+                    </li>
                 </ul>
             </div>
             <p className={styles.fraseP}>Amor em movimento!</p>
@@ -27,9 +39,11 @@ function Header() {
             mas sempre respeitando a singularidade de cada participante.
             </p>
 
-            <button className={styles.fraseB}>
-                <p className={styles.fraseBT}>Conheça nossas aulas</p>
-            </button>
+            <Link to="/">
+                <button className={styles.fraseB} href="#meu-titulo">
+                    <p className={styles.fraseBT} >Conheça nossas aulas</p>
+                </button>
+            </Link>
             
             <img src={banner} className={styles.imgP}></img>
         </main>

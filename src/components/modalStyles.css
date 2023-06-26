@@ -1,0 +1,10 @@
+.modal {
+/* Estilos para o modal */
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+}  
+  
+.modal-overlay {
+/* Estilos para o overlay do modal */
+    background-color: rgba(0, 0, 0, 0.5);
+}

@@ -37,9 +37,9 @@
 
 }
 
-.socials > a:hover{
-    cursor: pointer;
-    text-decoration: underline #FFD302;
+.icon {
+    font-size: 24px;
+    color: #fff;
 }
 
 .socials:hover {

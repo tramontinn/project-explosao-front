@@ -1,6 +1,10 @@
 import styles from './Aulas.module.css'
 
 function Aulas() {
+    const handleWhatsAppClick = () => {
+        window.open(`https://api.whatsapp.com/send?phone=55${51993302829}`, '_blank');
+      };
+
     return (
         <main className={styles.background}>
             <div className={styles.entorno} id='meu-titulo'>Nossas aulas</div>
@@ -11,14 +15,14 @@ function Aulas() {
                         <p className={styles.jazzSobre}>
                             Este estilo de dança é um dos mais populares do mundo, conhecido pela sua combinação de movimentos de jazz, ballet e contemporâneo.
                         </p>
-                        <button><p>AGENDE UMA AULA</p></button>                
+                        <button onClick={handleWhatsAppClick}><p>AGENDE UMA AULA</p></button>                
                     </div>
                 
                 <div className={styles.aulaDancaUrbana}>
                     <div className={styles.dancaurbana}>DANÇAS URBANAS</div>
                         <p className={styles.dancaUrbanaSobre}>
                             Danças urbanas são uma forma empolgante e vibrante de dançar, que incorpora estilos como hip-hop e breakdance. As aulas de danças urbanas são uma forma de se conectar com a cultura e a história da dança de rua                        </p>
-                    <button><p>AGENDE UMA AULA</p></button>                
+                    <button onClick={handleWhatsAppClick}><p>AGENDE UMA AULA</p></button>                
                 </div>
 
 
@@ -27,7 +31,7 @@ function Aulas() {
                         <p className={styles.sobreContemp}>
                         As aulas de dança contemporânea são uma forma expressiva e emocionante de dançar, que incorpora elementos do ballet clássico, da dança moderna e outras técnicas de dança.
                         </p>
-                    <button><p>AGENDE UMA AULA</p></button>                
+                    <button onClick={handleWhatsAppClick}><p>AGENDE UMA AULA</p></button>                
                 </div>
 
                 <div className={styles.aulaBallet}>
@@ -35,7 +39,7 @@ function Aulas() {
                         <p className={styles.sobreBallet}>
                         Em nossas aulas, você aprenderá a dominar os movimentos básicos do ballet clássico, enquanto trabalha na sua postura, equilíbrio e flexibilidade. Com aulas para o público adulto e infantil.
                         </p>
-                    <button><p>AGENDE UMA AULA</p></button>                
+                    <button onClick={handleWhatsAppClick}><p>AGENDE UMA AULA</p></button>                
                 </div>
 
                 <div className={styles.aulaAcroba}>
@@ -43,7 +47,7 @@ function Aulas() {
                         <p className={styles.sobreAcroba}>
                         As aulas de acrobacias são uma forma emocionante e desafiadora de dançar, que envolve movimentos acrobáticos e ginásticos combinados com elementos da dança.
                         </p>
-                    <button><p>AGENDE UMA AULA</p></button>                
+                    <button onClick={handleWhatsAppClick}><p>AGENDE UMA AULA</p></button>                
                 </div>
 
                 <div className={styles.aulaTeatro}>
@@ -51,7 +55,7 @@ function Aulas() {
                         <p className={styles.sobreTeatro}>
                         Em nossas aulas, você aprenderá técnicas de voz, corpo e improvisação, enquanto desenvolve suas habilidades de atuação e criatividade.
                         </p>
-                    <button><p>AGENDE UMA AULA</p></button>                
+                    <button onClick={handleWhatsAppClick}><p>AGENDE UMA AULA</p></button>                
                 </div>
 
                 <div className={styles.aulaJiu}>
@@ -59,7 +63,7 @@ function Aulas() {
                         <p className={styles.sobreJiu}>
                             As aulas de jiu-jitsu são uma forma empolgante e desafiadora de se exercitar, que combina técnicas de luta e artes marciais. Junte-se a nós para uma aula e descubra a força e a coragem do jiu-jitsu!
                         </p>
-                    <button><p>AGENDE UMA AULA</p></button>                
+                    <button onClick={handleWhatsAppClick}><p>AGENDE UMA AULA</p></button>                
                 </div>
 
             </div>

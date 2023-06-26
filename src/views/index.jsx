@@ -7,12 +7,14 @@ import Aulas from '../components/Aulas'
 import Professores from '../components/Professores'
 import Endereco from '../components/Endereco'
 import Footer from '../components/Footer'
+import ButtonWhats from '../components/ButtonWhats'
 import { BrowserRouter } from 'react-router-dom'
 
 const Home = () => {
     return (
         <>
             <Header/>
+            <ButtonWhats />
             <Video/>
             <Aulas/>
             <Professores />

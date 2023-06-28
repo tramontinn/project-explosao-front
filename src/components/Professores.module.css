@@ -36,3 +36,54 @@
 .modal {
     color: white;
 }
+
+.infoContainer {
+    position: relative;
+    background-color: #1F272A;
+    padding: 50px;
+    color: white;
+    font-family: 'Montserrat';
+    font-style: normal;
+    box-sizing: border-box;
+}
+
+.infoContainer span {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.infoContainer .infoTitle{
+    font-family: Montserrat;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 18px;
+}
+
+.infoContainer p {
+    white-space: break-spaces;
+}
+
+.infoContainer a {
+    margin-left: 25px;
+    padding: 4px 10px;
+    border-radius: 20px;
+    background-color: #FFD302;
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #090909;
+    text-decoration: none;
+}
+
+.closeBtn {
+    background: transparent;
+    border: none;
+    color: #FFFFFF;
+    font-size: 35px;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+}

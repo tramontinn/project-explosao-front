@@ -1,5 +1,4 @@
 import styles from './Video.module.css'
-import banner from '../images/Banner_video.png'
 
 function Video() {
     return (

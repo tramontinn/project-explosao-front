@@ -7,11 +7,18 @@
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 24px;
 
     color: #FFFFFF;
-    margin-left: 20px;
+}
+
+.profJob {
+    font-family: 'Montserrat';
+    font-style: normal;
+    line-height: 24px;
+    font-size: 16px;
+    color: #FFFFFF;
 }
 
 .cardProf {
@@ -19,6 +26,21 @@
     justify-content: center;
     flex-direction: column;
     padding: 0 14px;
+
+}
+
+.cardProf:hover .cardInfo{
+    background: #FFD302;
+}
+
+.cardProf:hover .profName, .cardProf:hover .profJob{
+    color: #090909;
+}
+
+.cardInfo {
+    max-width: 360px;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .procard {
@@ -31,4 +53,19 @@
 
 .cardProf img {
     max-width: 360px;
+}
+
+.profBtn {
+    text-decoration: underline;
+    color: #090909;
+    font-family: 'Montserrat';
+    font-style: normal;
+    line-height: 24px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 10px; 
+    font-size: 16px;
 }

@@ -1,14 +1,4 @@
 import styles from './Professores.module.css'
-import graciela from '../images/graciela_souza.png'
-import sonia from '../images/sonia_macedo.png'
-import leandro from '../images/leandro_rosa.png'
-import elder from '../images/elder_rocha.png'
-import bruno from '../images/bruno_guerra.png'
-import mateus from '../images/mateus_policena.png'
-import adriano from '../images/adriano_guerra.png'
-import vanusa from '../images/vanusa_chaves.png'
-import luisa from '../images/luisa_carmo.png'
-
 import ProfCard from './ProfCard'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
@@ -16,81 +6,12 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import React, { useState } from 'react';
-import ReactModal from 'react-modal'
-
-
-
-const professorsData = [
-    {
-    image: graciela,
-    name: 'Graciela Souza',
-    job: 'Diretora/Professora de dança',
-    description: 'Formada em Educação Física/Licenciatura, Pós-Graduada em Dança e cursando a Pós-Graduação em Dançaterapia. Iniciou a trajetória na dança em um projeto social, PEI (Programa Esporte Integral), no Grupo Baturidança. Bolsista na Corpus Cia de Dança por 18 anos, participando também da Cia Expressão de Rua – POA. Ministra aulas de dança desde 2003 em diversos locais, mas com ênfase principalmente em projetos sociais.',
-    alt:'foto professora de dança Graciela'
-    },
-    {
-    image: sonia,
-    name: 'Sonia Macedo',
-    job: 'Professora de dança',
-    description: ' ',
-    alt:'foto professora de dança Sonia'
-    },
-    {
-    image: leandro,
-    name: 'Leandro Rosa',
-    job: 'Professor de dança',
-    description: ' ',
-    alt:'foto professor de dança Leandro'
-    },
-    {
-    image: elder,
-    name: 'Elder Rocha',
-    job: 'Professor de dança',
-    description: ' ',
-    alt:'foto professor de dança Elder'
-    },
-    {
-    image: bruno,
-    name: 'Bruno',
-    job: 'Professor de dança',
-    description: ' ',
-    alt:'foto professor de dança Bruno'
-    },
-    {
-    image: mateus,
-    name: 'Mateus Policena',
-    job: 'Professor de dança',
-    description: ' ',
-    alt:'foto professor de dança Mateus'
-    },
-    {
-    image: adriano,
-    name: 'Adriano Guerra',
-    job: 'Professor de Jiu-Jitsu',
-    description: ' ',
-    alt:'foto professor de Jiu-Jitsu Adriano'
-    },
-    {
-    image: vanusa,
-    name: 'Vanusa Chaves',
-    job: 'Professora de Yoga',
-    description: ' ',
-    alt:'foto professora de yoga Vanusa'
-    },
-    {
-    image: luisa,
-    name: 'Luisa do Carmo',
-    job: 'Professora de teatro',
-    description: ' ',
-    alt:'foto professora de teatro Luisa'
-    },
-
-]
-
+import professorsData from '../data/ProfessoresData'
 
 function Professores() {
 
     const [isModalOpen, setIsModalOpen] = useState(false);
+    const [professorModal, setProfessorModal] = useState("")
 
     const openModal = () => {
     setIsModalOpen(true);
@@ -100,7 +21,10 @@ function Professores() {
     setIsModalOpen(false);
     };
 
-const firstProfessor = professorsData[0]
+    const openProfessorModal = (professor) => {
+        setProfessorModal(professor)
+        openModal()
+    }
 
 return (
     <main className={styles.containerProf}>
@@ -114,12 +38,32 @@ return (
         >
         {professorsData.map(professor => 
             <SwiperSlide key={professor.name}>
-                <ProfCard  img={professor.image} alt={professor.alt} name={professor.name} job={professor.job}>
+                <ProfCard professor={professor} img={professor.image} alt={professor.alt} name={professor.name} job={professor.job} showInfo={openProfessorModal}>
                 </ProfCard>
+                {/* <button value={JSON.stringify(professor)} onClick={(e) => openProfessorModal(JSON.parse(e.target.value))}>Saiba mais</button>                 */}
             </SwiperSlide>)}
             </Swiper>
-            <button onClick={openModal}>Saiba mais</button>
-                <ReactModal isOpen={isModalOpen} onRequestClose={closeModal} contentLabel='Informações adicionais' ariaHideApp={false}
+            
+            {isModalOpen ? (
+                <div className={styles.infoContainer}>
+                    <button className={styles.closeBtn} onClick={closeModal}>X</button>
+                    <span>
+                        <div className={styles.infoTitle}>{professorModal.name}</div>
+                        {professorModal.instagram && (
+                            <a target='_blank' href={`https://www.instagram.com/${professorModal.instagram}`}>@{professorModal.instagram}</a>
+                        )}
+                    </span>
+                    <p>
+                        {professorModal.description}
+                    </p>
+                </div>
+                )
+            : null}
+
+
+
+
+            {/* <ReactModal isOpen={isModalOpen} onRequestClose={closeModal} contentLabel='Informações adicionais' ariaHideApp={false} parentSelector={() => document.querySelector('#root')}
                     style={{
                         content: {
                             background: '#090909',
@@ -130,6 +74,7 @@ return (
                             color: 'white',
                             display: 'flex',
                             gap: '35px',
+                            zIndex: '10000',
                         },
                         overlay: {
                             background: 'transparent',
@@ -137,11 +82,11 @@ return (
                         }
                     }}>
                     <div>
-                        <h2>{firstProfessor.name}</h2>
-                        <p>{firstProfessor.description}</p>
+                        <h2>{professorModal.name}</h2>
+                        <p>{professorModal.description}</p>
                     </div>
                     <button onClick={closeModal}>X</button>
-                </ReactModal>
+                </ReactModal> */}
             </div>
         </main>
     )

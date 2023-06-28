@@ -13,9 +13,9 @@ function Footer() {
                         <p className={styles.mail}>explosaodance@gmail.com</p>
                     </div>
                 <ul className={styles.social}>
-                    <li><FaInstagram /></li>
-                    <li><FaFacebookF /></li>
-                    <li><FaYoutube /></li>
+                    <a href='https://www.instagram.com/grupo.explosao/' className={styles.icon}><FaInstagram /></a>
+                    <a href='https://www.facebook.com/explosaodadanca/' className={styles.icon}><FaFacebookF /></a>
+                    <a href='https://www.youtube.com/@grupoexplosaodadanca8891' className={styles.icon}><FaYoutube /></a>
                 </ul>
                 <div className={styles.creators}>Criadores<br/> Gabriel Rosa  |  Guilherme Tramontin  |  Renan Rosa</div>
                 <div className={styles.desenv}>Site desenvolvido na disciplina<br/> Projeto Integrador Web - Universidade La Salle Canoas</div>

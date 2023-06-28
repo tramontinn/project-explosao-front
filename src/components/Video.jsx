@@ -4,7 +4,7 @@ import banner from '../images/Banner_video.png'
 function Video() {
     return (
         <main className={styles.container}>
-            <img src={banner} className={styles.imgV}></img>
+            <iframe className={styles.imgV} width="560" height="315" src="https://www.youtube.com/embed/hfiHyWVowP4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </main>
     )
 }

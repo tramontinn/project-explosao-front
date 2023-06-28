@@ -1,20 +1,17 @@
 .container {
-    position: absolute;
-    margin-top: 56px;
-    width: 100vw;
-    height: 728px;
+    position: relative;
+    width: 100%;
+    max-width: 730px;
+    /* height: 728px; */
     left: 0px;
-    top: 766px;
-   
     background: #090909;
+    margin: 0 auto;
+    margin-top: 56px;
+    margin-bottom: 50px;
 }
 
 .imgV {
-    position: absolute;
-    top: 45%;
-    left: 43%;
+    position: relative;
     width: 730px;
     height: 500px;
-    margin-top: -200px;
-    margin-left: -250px;
 }

@@ -6,8 +6,8 @@ function Aulas() {
       };
 
     return (
-        <main className={styles.background}>
-            <div className={styles.entorno} id='meu-titulo'>Nossas aulas</div>
+        <div className={styles.container}>
+            <div className={styles.titulo} id='meu-titulo'>Nossas aulas</div>
             <div className={styles.aulas}>
 
                 <div className={styles.aulaJazz}>
@@ -67,7 +67,7 @@ function Aulas() {
                 </div>
 
             </div>
-        </main>
+        </div>
     )
 }
 

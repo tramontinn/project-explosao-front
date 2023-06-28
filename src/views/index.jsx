@@ -14,7 +14,7 @@ const Home = () => {
     return (
         <>
             <Header/>
-            <ButtonWhats />
+            <ButtonWhats/>
             <Video/>
             <Aulas/>
             <Professores />

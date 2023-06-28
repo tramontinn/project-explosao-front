@@ -12,17 +12,17 @@ function Header() {
                 <ul className={styles.socials}>
                     {/* <Link to="login">Login</Link> */}
                     <li>
-                        <a href='https://www.youtube.com/@grupoexplosaodadanca8891' className={styles.icon}>
+                        <a href='https://www.youtube.com/@grupoexplosaodadanca8891' target='_blank' className={styles.icon}>
                             <FaYoutube />
                         </a>
                     </li>
                     <li>
-                        <a href='https://www.facebook.com/explosaodadanca/' className={styles.icon}>
+                        <a href='https://www.facebook.com/explosaodadanca/' target='_blank' className={styles.icon}>
                             <FaFacebookF />
                         </a>
                     </li>
                     <li>
-                        <a href='https://www.instagram.com/grupo.explosao/' className={styles.icon}>
+                        <a href='https://www.instagram.com/grupo.explosao/' target='_blank' className={styles.icon}>
                             <FaInstagram />
                         </a>
                     </li>
@@ -38,13 +38,9 @@ function Header() {
             com muita qualidade e profissionalismo, 
             mas sempre respeitando a singularidade de cada participante.
             </p>
-
-            <Link to="/">
-                <button className={styles.fraseB} href="#meu-titulo">
+                <a className={styles.fraseB} href="#meu-titulo">
                     <p className={styles.fraseBT} >Conheça nossas aulas</p>
-                </button>
-            </Link>
-            
+                </a>            
             <img src={banner} className={styles.imgP}></img>
         </main>
     )

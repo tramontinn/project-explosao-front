@@ -11,6 +11,7 @@
     line-height: 24px;
 
     color: #FFFFFF;
+    transition: all 200ms ease;
 }
 
 .profJob {
@@ -19,6 +20,7 @@
     line-height: 24px;
     font-size: 16px;
     color: #FFFFFF;
+    transition: all 200ms ease;
 }
 
 .cardProf {
@@ -26,7 +28,8 @@
     justify-content: center;
     flex-direction: column;
     padding: 0 14px;
-
+    margin-left: 50px;
+    transition: all 200ms ease;
 }
 
 .cardProf:hover .cardInfo{
@@ -41,6 +44,7 @@
     max-width: 360px;
     padding: 20px;
     box-sizing: border-box;
+    transition: all 200ms ease;
 }
 
 .procard {
